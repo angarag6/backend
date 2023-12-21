@@ -1,7 +1,12 @@
 import mongoose from "mongoose";
 
 const   UrlSchema = new mongoose.Schema({
-    Url:String
+    shortUrl:String,
+    longUrl:String,
+    createAt: {
+        type: Date,
+        
+    }
 });
 
 const   Url = mongoose.model('Url', UrlSchema);
