@@ -5,6 +5,7 @@ const   UrlSchema = new mongoose.Schema({
     longUrl:String,
     createAt: {
         type: Date,
+        default:Date.now(),
         
     }
 });
